@@ -70,7 +70,30 @@ Lớp: D16CQCN02-N
 			B8: Agent Security			-> Security Setting > Run under SQL... > Using the following SQL Server login > đăng nhập tài khoản sa
 			B9: Complete the Wizard		-> Nhập Publication Name > "QLSV_PKT"
 			B10: The End
-2. Phân quyền cơ sở dũ liệu
+2. Hướng dẫn tạo link server
+	- Tạo tài khoản HTKN
+		+ SERVER (muốn tạo) > Login > Right Click > New Lgin > Login Name "HTKN" > SQL server authentication > Unselect "Enforce password policy" > User Mapping > QLSV > select db_owner > OK
+	
+	a. SERVER 1 - SERVER 2 (LINK1)
+		- SERVER 1 -> SERVER 2
+			+ SERVER 1 > Server Objects > Linked Servers > Right Click > New Link Server > Link Name "LINK1" > Product name "NAMEPC/NAMESERVER2" (Tên server muốn trỏ tới) > Data Source (The same previous step)
+			> Security > Be made using security context > Đăng nhâp tài khoản HTKN > Data access, RPC, RPC Out, Use Remote Collation (true) > OK
+		- SERVER 1 -> SERVER 2
+			+ SERVER 2 > Server Objects > Linked Servers > Right Click > New Link Server > Link Name "LINK1" > Product name "NAMEPC/NAMESERVER1" (Tên server muốn trỏ tới) > Data Source (The same previous step)
+			> Security > Be made using security context > Đăng nhâp tài khoản HTKN > Data access, RPC, RPC Out, Use Remote Collation (true) > OK
+	
+	b. SERVER 1 - SERVER 3 (LINK2)
+		- SERVER 1 -> SERVER 3
+		
+		
+		- SERVER 3 -> SERVER 1
+	
+	c. SERVER 2 - SERVER 3 (LINK2)
+		- SERVER 2 -> SERVER 3
+		
+		
+		- SERVER 3 -> SERVER 2
+3. Phân quyền cơ sở dũ liệu
 	a. PGV
 		- Yêu cầu:
 			+ Nếu login thuộc nhóm PGV thì login đó có thể đăng nhập vào bất kỳ khoa nào để cập nhật bằng cách chọn tên khoa,  và tìm dữ liệu trên phân mảnh tương ứng. Login này được tạo tài khoản cho nhóm PGV,Khoa và User.
@@ -140,6 +163,6 @@ Lớp: D16CQCN02-N
 		END
 		
 			
-3. Cách đẩy SP Từ Site chủ sang các site con
+4. Cách đẩy SP Từ Site chủ sang các site con
 	- Vô Site Chủ -> Replication -> Local Publications -> Chọn 1 Publication cần đẩy SP -> Right Click -> Properties -> Articles -> Select SP -> OK
 
