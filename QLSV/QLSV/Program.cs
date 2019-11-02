@@ -17,7 +17,7 @@ namespace QLSV
         public static SqlConnection conn = new SqlConnection();
         public static String connstr;
         public static SqlDataReader myReader;
-        public static String servername = "";
+        public static String servername = "JAXZ";
         public static String username = "";
         public static String mlogin = "";
         public static String password = "";

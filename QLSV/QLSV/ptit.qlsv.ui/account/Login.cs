@@ -42,7 +42,7 @@ namespace QLSV
             catch (Exception) { };
         }
 
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text.Trim() == "" || txtPassword.Text.Trim() == "")
             {
@@ -74,8 +74,7 @@ namespace QLSV
             Program.myReader.Close();
             Program.conn.Close();
             MessageBox.Show("Nhan vien - Nhom : " + Program.mHoten + " - " + Program.mGroup, "", MessageBoxButtons.OK);
-
+  
         }
-
     }
 }

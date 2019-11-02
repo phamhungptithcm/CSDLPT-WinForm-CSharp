@@ -33,14 +33,20 @@ namespace QLSV
             this.cmbKhoa = new System.Windows.Forms.ComboBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.lblFormTitleLogin = new System.Windows.Forms.Label();
+            this.lblKhoa = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbKhoa
             // 
+            this.cmbKhoa.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbKhoa.FormattingEnabled = true;
             this.cmbKhoa.Location = new System.Drawing.Point(194, 110);
             this.cmbKhoa.Name = "cmbKhoa";
-            this.cmbKhoa.Size = new System.Drawing.Size(337, 21);
+            this.cmbKhoa.Size = new System.Drawing.Size(337, 30);
             this.cmbKhoa.TabIndex = 0;
             // 
             // txtUsername
@@ -57,11 +63,65 @@ namespace QLSV
             this.txtPassword.Size = new System.Drawing.Size(337, 20);
             this.txtPassword.TabIndex = 2;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(456, 372);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            // 
+            // lblFormTitleLogin
+            // 
+            this.lblFormTitleLogin.AutoSize = true;
+            this.lblFormTitleLogin.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormTitleLogin.Location = new System.Drawing.Point(308, 46);
+            this.lblFormTitleLogin.Name = "lblFormTitleLogin";
+            this.lblFormTitleLogin.Size = new System.Drawing.Size(99, 26);
+            this.lblFormTitleLogin.TabIndex = 4;
+            this.lblFormTitleLogin.Text = "Welcome";
+            // 
+            // lblKhoa
+            // 
+            this.lblKhoa.AutoSize = true;
+            this.lblKhoa.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKhoa.Location = new System.Drawing.Point(109, 110);
+            this.lblKhoa.Name = "lblKhoa";
+            this.lblKhoa.Size = new System.Drawing.Size(49, 22);
+            this.lblKhoa.TabIndex = 5;
+            this.lblKhoa.Text = "Khoa";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(85, 200);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(89, 22);
+            this.lblUsername.TabIndex = 6;
+            this.lblUsername.Text = "Username";
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(85, 284);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(84, 22);
+            this.lblPassword.TabIndex = 7;
+            this.lblPassword.Text = "Password";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 478);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblKhoa);
+            this.Controls.Add(this.lblFormTitleLogin);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.cmbKhoa);
@@ -76,6 +136,11 @@ namespace QLSV
         private System.Windows.Forms.ComboBox cmbKhoa;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label lblFormTitleLogin;
+        private System.Windows.Forms.Label lblKhoa;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
     }
 }
-
+z
