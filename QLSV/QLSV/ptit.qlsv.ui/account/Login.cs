@@ -56,7 +56,7 @@ namespace QLSV
 
             Program.mloginDN = Program.mlogin;
             Program.passwordDN = Program.password;
-            string strLenh = "EXEC SP_THONGTINDANGNHAP '" + Program.mlogin + "'";
+            string strLenh = "EXEC SP_DANGNHAP'" + Program.mlogin + "'";
 
             Program.myReader = Program.ExecSqlDataReader(strLenh);
             if (Program.myReader == null) return;
@@ -73,7 +73,7 @@ namespace QLSV
             Program.mGroup = Program.myReader.GetString(2);
             Program.myReader.Close();
             Program.conn.Close();
-            MessageBox.Show("Nhan vien - Nhom : " + Program.mHoten + " - " + Program.mGroup, "", MessageBoxButtons.OK);
+            MessageBox.Show("Giáo Viên - Khoa : " + Program.mHoten + " - " + Program.mGroup, "", MessageBoxButtons.OK);
   
         }
     }

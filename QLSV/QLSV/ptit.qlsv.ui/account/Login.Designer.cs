@@ -51,23 +51,26 @@ namespace QLSV
             // 
             // txtUsername
             // 
+            this.txtUsername.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(194, 200);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(337, 20);
+            this.txtUsername.Size = new System.Drawing.Size(337, 29);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
+            this.txtPassword.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(194, 284);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(337, 20);
+            this.txtPassword.Size = new System.Drawing.Size(337, 29);
             this.txtPassword.TabIndex = 2;
             // 
             // btnLogin
             // 
+            this.btnLogin.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(456, 372);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(75, 35);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -143,4 +146,4 @@ namespace QLSV
         private System.Windows.Forms.Label lblPassword;
     }
 }
-z
+
