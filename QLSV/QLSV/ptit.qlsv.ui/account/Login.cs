@@ -17,20 +17,29 @@ namespace QLSV
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void frmDangNhap_Load(object sender, EventArgs e)
         {
-
-            string chuoiketnoi = "Data Source=JAXZ;Initial Catalog=QLDSV;Persist Security Info=True;User ID=sa;Password=1234";
+            string chuoiketnoi = "Data Source=JAXZ;Initial Catalog=QLSV;Integrated Security=True";
             Program.conn.ConnectionString = chuoiketnoi;
             Program.conn.Open();
             DataTable dt = new DataTable();
-            dt = Program.ExecSqlDataTable("SELECT * FROM V_DS_PHANMANH");
+            dt = Program.ExecSqlDataTable("SELECT * FROM V_DSPM");
             Program.bds_dspm.DataSource = dt;
             cmbKhoa.DataSource = dt;
-            cmbKhoa.DisplayMember = "TENKHOA";
+            cmbKhoa.DisplayMember = "TENPM";
             cmbKhoa.ValueMember = "TENSERVER";
             cmbKhoa.SelectedIndex = -1;
 
+        }
+
+        private void cmbKhoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Program.servername = cmbKhoa.SelectedValue.ToString();
+
+            }
+            catch (Exception) { };
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -65,17 +74,7 @@ namespace QLSV
             Program.myReader.Close();
             Program.conn.Close();
             MessageBox.Show("Giáo Viên - Khoa : " + Program.mHoten + " - " + Program.mGroup, "", MessageBoxButtons.OK);
-
-        }
-
-        private void cmbKhoa_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                Program.servername = cmbKhoa.SelectedValue.ToString();
-
-            }
-            catch (Exception) { };
+  
         }
     }
 }
