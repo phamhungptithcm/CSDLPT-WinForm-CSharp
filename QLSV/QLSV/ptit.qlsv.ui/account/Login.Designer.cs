@@ -38,6 +38,7 @@ namespace QLSV
             this.lblKhoa = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.cbHienThi = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // cmbKhoa
@@ -65,15 +66,16 @@ namespace QLSV
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(337, 29);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(456, 372);
+            this.btnLogin.Location = new System.Drawing.Point(417, 350);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 35);
+            this.btnLogin.Size = new System.Drawing.Size(114, 35);
             this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -83,9 +85,9 @@ namespace QLSV
             this.lblFormTitleLogin.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFormTitleLogin.Location = new System.Drawing.Point(308, 46);
             this.lblFormTitleLogin.Name = "lblFormTitleLogin";
-            this.lblFormTitleLogin.Size = new System.Drawing.Size(99, 26);
+            this.lblFormTitleLogin.Size = new System.Drawing.Size(95, 26);
             this.lblFormTitleLogin.TabIndex = 4;
-            this.lblFormTitleLogin.Text = "Welcome";
+            this.lblFormTitleLogin.Text = "Xin Chào";
             // 
             // lblKhoa
             // 
@@ -101,27 +103,40 @@ namespace QLSV
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(85, 200);
+            this.lblUsername.Location = new System.Drawing.Point(35, 200);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(89, 22);
+            this.lblUsername.Size = new System.Drawing.Size(123, 22);
             this.lblUsername.TabIndex = 6;
-            this.lblUsername.Text = "Username";
+            this.lblUsername.Text = "Tên đăng nhập";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(85, 284);
+            this.lblPassword.Location = new System.Drawing.Point(76, 284);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(84, 22);
+            this.lblPassword.Size = new System.Drawing.Size(82, 22);
             this.lblPassword.TabIndex = 7;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Text = "Mật Khẩu";
+            // 
+            // cbHienThi
+            // 
+            this.cbHienThi.AutoSize = true;
+            this.cbHienThi.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbHienThi.Location = new System.Drawing.Point(548, 285);
+            this.cbHienThi.Name = "cbHienThi";
+            this.cbHienThi.Size = new System.Drawing.Size(88, 26);
+            this.cbHienThi.TabIndex = 8;
+            this.cbHienThi.Text = "Hiển thị";
+            this.cbHienThi.UseVisualStyleBackColor = true;
+            this.cbHienThi.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 478);
+            this.Controls.Add(this.cbHienThi);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblKhoa);
@@ -148,6 +163,7 @@ namespace QLSV
         private System.Windows.Forms.Label lblKhoa;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.CheckBox cbHienThi;
     }
 }
 

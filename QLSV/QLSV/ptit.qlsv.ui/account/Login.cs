@@ -82,5 +82,10 @@ namespace QLSV
             }
             catch (Exception) { };
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = !cbHienThi.Checked;
+        }
     }
 }
