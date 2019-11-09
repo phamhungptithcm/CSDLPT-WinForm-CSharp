@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLSV.ptit.qlsv.ui.nhap;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -86,7 +87,7 @@ namespace QLSV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new frmMain());
         }
     }
 }
