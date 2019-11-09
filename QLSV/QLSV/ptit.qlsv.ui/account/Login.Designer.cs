@@ -48,6 +48,7 @@ namespace QLSV
             this.cmbKhoa.Name = "cmbKhoa";
             this.cmbKhoa.Size = new System.Drawing.Size(337, 30);
             this.cmbKhoa.TabIndex = 0;
+            this.cmbKhoa.SelectedIndexChanged += new System.EventHandler(this.cmbKhoa_SelectedIndexChanged);
             // 
             // txtUsername
             // 
@@ -74,6 +75,7 @@ namespace QLSV
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblFormTitleLogin
             // 
@@ -130,6 +132,7 @@ namespace QLSV
             this.Controls.Add(this.cmbKhoa);
             this.Name = "Login";
             this.Text = "Welcome";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

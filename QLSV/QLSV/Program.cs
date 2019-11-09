@@ -18,12 +18,12 @@ namespace QLSV
         public static String connstr;
         public static SqlDataReader myReader;
         public static String servername = "JAXZ";
-        public static String username = "";
+        public static String username = "sa";
         public static String mlogin = "";
-        public static String password = "";
+        public static String password = "1234";
 
         public static String database = "QLSV";
-        public static String remotelogin = "HTKN";
+        public static String remotelogin = "HTKN";  
         public static String remotepassword = "1234";
         public static String mloginDN = "";
         public static String passwordDN = "";
@@ -32,6 +32,7 @@ namespace QLSV
         public static int mChinhanh = 0;
 
         public static BindingSource bds_dspm = new BindingSource();  // giữ bdsPM khi đăng nhập
+       
         //public static frmMain frmChinh;
 
         public static int KetNoi()
