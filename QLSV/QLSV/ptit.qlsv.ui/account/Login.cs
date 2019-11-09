@@ -29,7 +29,7 @@ namespace QLSV
             cmbKhoa.DataSource = dt;
             cmbKhoa.DisplayMember = "TENKHOA";
             cmbKhoa.ValueMember = "TENSERVER";
-            cmbKhoa.SelectedIndex = -1;
+            cmbKhoa.SelectedIndex = 0;
 
         }
 
@@ -37,7 +37,8 @@ namespace QLSV
         {
             if (txtUsername.Text.Trim() == "" || txtPassword.Text.Trim() == "")
             {
-                MessageBox.Show("Login name và mật mã không được trống", "", MessageBoxButtons.OK);
+                MessageBox.Show("Login name và mật mã không được trống", "", MessageBoxButtons.OK, MessageBoxIcon.
+                    Warning, MessageBoxDefaultButton.Button1);
                 return;
             }
             Program.mlogin = txtUsername.Text; Program.password = txtPassword.Text;
@@ -57,14 +58,19 @@ namespace QLSV
             Program.username = Program.myReader.GetString(0);     // Lay user name
             if (Convert.IsDBNull(Program.username))
             {
-                MessageBox.Show("Login bạn nhập không có quyền truy cập dữ liệu\n Bạn xem lại username, password", "", MessageBoxButtons.OK);
+                MessageBox.Show("Login bạn nhập không có quyền truy cập dữ liệu\n Bạn xem lại username, password", "", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
                 return;
             }
+
             Program.mHoten = Program.myReader.GetString(1);
             Program.mGroup = Program.myReader.GetString(2);
             Program.myReader.Close();
             Program.conn.Close();
-            MessageBox.Show("Giáo Viên - Khoa : " + Program.mHoten + " - " + Program.mGroup, "", MessageBoxButtons.OK);
+            DialogResult dialog = MessageBox.Show("Giáo Viên - Khoa : " + Program.mHoten + " - " + Program.mGroup, "", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            if (dialog == DialogResult.OK && Program.checkLogin())
+            {
+                Close();
+            }
 
         }
 
@@ -73,7 +79,6 @@ namespace QLSV
             try
             {
                 Program.servername = cmbKhoa.SelectedValue.ToString();
-
             }
             catch (Exception) { };
         }

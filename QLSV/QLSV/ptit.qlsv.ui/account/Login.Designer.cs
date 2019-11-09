@@ -131,6 +131,7 @@ namespace QLSV
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.cmbKhoa);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

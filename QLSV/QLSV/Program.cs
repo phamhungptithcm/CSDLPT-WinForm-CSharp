@@ -1,4 +1,5 @@
 ﻿
+using QLSV.ptit.qlsv.ui.home;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -52,9 +53,27 @@ namespace QLSV
 
             catch (Exception e)
             {
-                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu.\nBạn xem lại user name và password.\n " + e.Message, "", MessageBoxButtons.OK);
+                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu.\nBạn xem lại user name và password.\n " + e.Message, "", MessageBoxButtons.OK,MessageBoxIcon.Warning,MessageBoxDefaultButton.Button1);
                 return 0;
             }
+        }
+        public static bool checkLogin()
+        {
+            bool result = false;
+            if (mHoten != "" || mGroup != "")
+            {
+                result = true;
+            }
+            return result;
+        }
+        public static void logout()
+        {
+            mHoten = "";
+            mGroup = "";
+            mlogin = "";
+            passwordDN = "";
+            username = "";
+            Application.Run(new Login());
         }
         public static SqlDataReader ExecSqlDataReader(String strLenh)
         {
@@ -74,6 +93,7 @@ namespace QLSV
                 return null;
             }
         }
+       
         public static DataTable ExecSqlDataTable(String cmd)
         {
             DataTable dt = new DataTable();
@@ -89,6 +109,10 @@ namespace QLSV
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+            if (checkLogin())
+            {
+                Application.Run(new Home());
+            }
         }
     }
 }
