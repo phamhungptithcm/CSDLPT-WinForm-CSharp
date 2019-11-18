@@ -59,15 +59,5 @@ namespace QLSV.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _182_1821638_logout_icon_png_red_clipart {
-            get {
-                object obj = ResourceManager.GetObject("182-1821638_logout-icon-png-red-clipart", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

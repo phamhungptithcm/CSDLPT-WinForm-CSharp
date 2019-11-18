@@ -20,14 +20,14 @@ namespace QLSV
         public static SqlConnection conn = new SqlConnection();
         public static String connstr;
         public static SqlDataReader myReader;
-        public static String servername = "JAXZ";
+        public static String servername = "DESKTOP-SFRUQ93";
         public static String username = "sa";
         public static String mlogin = "";
-        public static String password = "1234";
+        public static String password = "12345";
 
-        public static String database = "QLSV";
+        public static String database = "QLDSV";
         public static String remotelogin = "HTKN";  
-        public static String remotepassword = "1234";
+        public static String remotepassword = "12345";
         public static String mloginDN = "";
         public static String passwordDN = "";
         public static String mGroup = "";

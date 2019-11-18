@@ -58,6 +58,18 @@ namespace QLSV.ptit.qlsv.ui.home
             }
         }
 
-       
+        private void barButtonSubject_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form f = this.CheckExists(typeof(Subject));
+            if(f == null)
+            {
+                Subject sb = new Subject();
+                sb.MdiParent = this;
+                sb.Show();
+            } else
+            {
+                f.Activate();
+            }
+        }
     }
 }

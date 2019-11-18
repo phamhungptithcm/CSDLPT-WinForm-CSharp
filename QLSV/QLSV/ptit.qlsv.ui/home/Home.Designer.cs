@@ -40,12 +40,14 @@
             this.btnPoint = new DevExpress.XtraBars.BarButtonItem();
             this.btnPayclassFees = new DevExpress.XtraBars.BarButtonItem();
             this.btnExamlist = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExit = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupStudent = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btnThoat = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageReport = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -55,8 +57,6 @@
             this.cbbKHOA = new System.Windows.Forms.ComboBox();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.qldsvDataSet1 = new QLSV.QLDSVDataSet();
-            this.btnThoat = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnExit = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -134,6 +134,7 @@
             this.barButtonSubject.Name = "barButtonSubject";
             this.barButtonSubject.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonSubject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonSubject_ItemClick);
             // 
             // barButtonClass
             // 
@@ -257,6 +258,14 @@
             this.btnExamlist.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnExamlist.ImageOptions.LargeImage")));
             this.btnExamlist.Name = "btnExamlist";
             // 
+            // btnExit
+            // 
+            this.btnExit.Caption = "Exit";
+            this.btnExit.Id = 12;
+            this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
+            this.btnExit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.LargeImage")));
+            this.btnExit.Name = "btnExit";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -298,6 +307,11 @@
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.btnPoint);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.ItemLinks.Add(this.btnExit);
+            this.btnThoat.Name = "btnThoat";
             // 
             // ribbonPageReport
             // 
@@ -362,19 +376,6 @@
             // 
             this.qldsvDataSet1.DataSetName = "QLDSVDataSet";
             this.qldsvDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.ItemLinks.Add(this.btnExit);
-            this.btnThoat.Name = "btnThoat";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Caption = "Exit";
-            this.btnExit.Id = 12;
-            this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
-            this.btnExit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.LargeImage")));
-            this.btnExit.Name = "btnExit";
             // 
             // Home
             // 
