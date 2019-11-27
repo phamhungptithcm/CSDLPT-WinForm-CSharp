@@ -46,10 +46,10 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.dS = new QLSV.DS();
+            this.dS = new QLSV.QLDSVDataSet();
             this.bdsMONHOC = new System.Windows.Forms.BindingSource(this.components);
-            this.MONHOCTableAdapter = new QLSV.DSTableAdapters.MONHOCTableAdapter();
-            this.tableAdapterManager = new QLSV.DSTableAdapters.TableAdapterManager();
+            this.MONHOCTableAdapter = new QLSV.QLDSVDataSetTableAdapters.MONHOCTableAdapter();
+            this.tableAdapterManager = new QLSV.QLDSVDataSetTableAdapters.TableAdapterManager();
             this.mONHOCGridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMAMH = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -248,7 +248,7 @@
             this.tableAdapterManager.LOPTableAdapter = null;
             this.tableAdapterManager.MONHOCTableAdapter = this.MONHOCTableAdapter;
             this.tableAdapterManager.SINHVIENTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = QLSV.DSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = QLSV.QLDSVDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // mONHOCGridControl
             // 
@@ -369,9 +369,9 @@
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private System.Windows.Forms.BindingSource bdsMONHOC;
-        private DS dS;
-        private DSTableAdapters.MONHOCTableAdapter MONHOCTableAdapter;
-        private DSTableAdapters.TableAdapterManager tableAdapterManager;
+        private QLDSVDataSet dS;
+        private QLDSVDataSetTableAdapters.MONHOCTableAdapter MONHOCTableAdapter;
+        private QLDSVDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private DevExpress.XtraGrid.GridControl mONHOCGridControl;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colMAMH;

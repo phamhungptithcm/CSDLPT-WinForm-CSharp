@@ -54,19 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ptit.qlsv.ui\AddClass\Class.cs">
+    <Compile Include="ptit.qlsv.ui\classes\Class.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\AddClass\Class.Designer.cs">
+    <Compile Include="ptit.qlsv.ui\classes\Class.Designer.cs">
       <DependentUpon>Class.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DS.cs">
-      <DependentUpon>DS.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS.xsd</DependentUpon>
     </Compile>
     <Compile Include="ptit.qlsv.ui\account\Login.cs">
       <SubType>Form</SubType>
@@ -82,18 +74,24 @@
     <Compile Include="ptit.qlsv.ui\home\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="ptit.qlsv.ui\students\Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ptit.qlsv.ui\students\Students.Designer.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ptit.qlsv.ui\subjects\Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ptit.qlsv.ui\subjects\Subject.Designer.cs">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLDSVDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDSVDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\Subject\Subject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ptit.qlsv.ui\Subject\Subject.Designer.cs">
-      <DependentUpon>Subject.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="ptit.qlsv.ui\AddClass\Class.resx">
+    <EmbeddedResource Include="ptit.qlsv.ui\classes\Class.resx">
       <DependentUpon>Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -113,20 +111,12 @@
     <EmbeddedResource Include="ptit.qlsv.ui\home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ptit.qlsv.ui\Subject\Subject.resx">
+    <EmbeddedResource Include="ptit.qlsv.ui\students\Students.resx">
+      <DependentUpon>Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptit.qlsv.ui\subjects\Subject.resx">
       <DependentUpon>Subject.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DS.xsc">
-      <DependentUpon>DS.xsd</DependentUpon>
-    </None>
-    <None Include="DS.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DS.xss">
-      <DependentUpon>DS.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

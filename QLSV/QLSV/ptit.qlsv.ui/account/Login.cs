@@ -20,7 +20,7 @@ namespace QLSV
         private void Login_Load(object sender, EventArgs e)
         {
 
-            string chuoiketnoi = "Data Source=DESKTOP-SFRUQ93;Initial Catalog=QLDSV;Persist Security Info=True;User ID=sa;Password=12345";
+            string chuoiketnoi = "Data Source=JAXZ;Initial Catalog=QLDSV;Persist Security Info=True;User ID=sa;Password=1234";
             Program.conn.ConnectionString = chuoiketnoi;
             Program.conn.Open();
             DataTable dt = new DataTable();

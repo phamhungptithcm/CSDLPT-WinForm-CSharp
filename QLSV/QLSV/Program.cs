@@ -20,14 +20,14 @@ namespace QLSV
         public static SqlConnection conn = new SqlConnection();
         public static String connstr;
         public static SqlDataReader myReader;
-        public static String servername = "DESKTOP-SFRUQ93";
-        public static String username = "sa";
+        public static String servername = "Jaxz";
+        public static String username = "";
         public static String mlogin = "";
-        public static String password = "12345";
+        public static String password = "";
 
-        public static String database = "QLDSV";
+        public static String database = "QLSV";
         public static String remotelogin = "HTKN";  
-        public static String remotepassword = "12345";
+        public static String remotepassword = "1234";
         public static String mloginDN = "";
         public static String passwordDN = "";
         public static String mGroup = "";
@@ -44,9 +44,10 @@ namespace QLSV
                 Program.conn.Close();
             try
             {
+                //Data Source=JAXZ;Initial Catalog=QLDSV;Persist Security Info=True;User ID=sa;Password=1234
                 Program.connstr = "Data Source=" + Program.servername + ";Initial Catalog=" +
-                      Program.database + ";User ID=" +
-                      Program.mlogin + ";password=" + Program.password;
+                      Program.database+ ";;Persist Security Info=True" + ";User ID=" +
+                      Program.mlogin + ";Password=" + Program.password;
                 Program.conn.ConnectionString = Program.connstr;
                 Program.conn.Open();
                 return 1;

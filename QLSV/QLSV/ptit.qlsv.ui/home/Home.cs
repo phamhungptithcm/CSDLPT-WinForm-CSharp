@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLSV.ptit.qlsv.ui.students;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,11 +20,7 @@ namespace QLSV.ptit.qlsv.ui.home
 
         private void Home_Load(object sender, EventArgs e)
         {
-            cbbKHOA.DataSource = Program.bds_dspm;//sao chep bds
-            cbbKHOA.DisplayMember = "TENKHOA";
-            cbbKHOA.ValueMember = "TENSERVER";
-            cbbKHOA.SelectedIndex = Program.mChinhanh;
-            cbbKHOA.Enabled = true;
+           
 
         }
 
@@ -67,6 +64,21 @@ namespace QLSV.ptit.qlsv.ui.home
                 sb.MdiParent = this;
                 sb.Show();
             } else
+            {
+                f.Activate();
+            }
+        }
+
+        private void barButtonStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form f = this.CheckExists(typeof(Students));
+            if (f == null)
+            {
+                Students student = new Students();
+                student.MdiParent = this;
+                student.Show();
+            }
+            else
             {
                 f.Activate();
             }

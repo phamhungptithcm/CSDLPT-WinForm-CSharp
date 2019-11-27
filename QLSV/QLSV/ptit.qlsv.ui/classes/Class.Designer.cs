@@ -46,10 +46,10 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.dS = new QLSV.DS();
+            this.dS = new QLSV.QLDSVDataSet();
             this.bdsLOP = new System.Windows.Forms.BindingSource(this.components);
-            this.LOPTableAdapter = new QLSV.DSTableAdapters.LOPTableAdapter();
-            this.tableAdapterManager = new QLSV.DSTableAdapters.TableAdapterManager();
+            this.LOPTableAdapter = new QLSV.QLDSVDataSetTableAdapters.LOPTableAdapter();
+            this.tableAdapterManager = new QLSV.QLDSVDataSetTableAdapters.TableAdapterManager();
             this.gcLOP = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMALOP = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -60,7 +60,7 @@
             this.txtTENLOP = new DevExpress.XtraEditors.TextEdit();
             this.txtMALOP = new DevExpress.XtraEditors.TextEdit();
             this.bdsSINHVIEN = new System.Windows.Forms.BindingSource(this.components);
-            this.SINHVIENTableAdapter = new QLSV.DSTableAdapters.SINHVIENTableAdapter();
+            this.SINHVIENTableAdapter = new QLSV.QLDSVDataSetTableAdapters.SINHVIENTableAdapter();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             mALOPLabel = new System.Windows.Forms.Label();
             tENLOPLabel = new System.Windows.Forms.Label();
@@ -262,7 +262,7 @@
             this.tableAdapterManager.LOPTableAdapter = this.LOPTableAdapter;
             this.tableAdapterManager.MONHOCTableAdapter = null;
             this.tableAdapterManager.SINHVIENTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = QLSV.DSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = QLSV.QLDSVDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // gcLOP
             // 
@@ -442,9 +442,9 @@
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private System.Windows.Forms.BindingSource bdsLOP;
-        private DS dS;
-        private DSTableAdapters.LOPTableAdapter LOPTableAdapter;
-        private DSTableAdapters.TableAdapterManager tableAdapterManager;
+        private QLDSVDataSet dS;
+        private QLDSVDataSetTableAdapters.LOPTableAdapter LOPTableAdapter;
+        private QLDSVDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private DevExpress.XtraGrid.GridControl gcLOP;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colMALOP;
@@ -455,7 +455,7 @@
         private DevExpress.XtraEditors.TextEdit txtTENLOP;
         private DevExpress.XtraEditors.TextEdit txtMALOP;
         private System.Windows.Forms.BindingSource bdsSINHVIEN;
-        private DSTableAdapters.SINHVIENTableAdapter SINHVIENTableAdapter;
+        private QLDSVDataSetTableAdapters.SINHVIENTableAdapter SINHVIENTableAdapter;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
