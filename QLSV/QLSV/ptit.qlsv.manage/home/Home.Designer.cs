@@ -41,6 +41,7 @@
             this.btnPayclassFees = new DevExpress.XtraBars.BarButtonItem();
             this.btnExamlist = new DevExpress.XtraBars.BarButtonItem();
             this.btnExit = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnExit = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupStudent = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -54,7 +55,6 @@
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.qldsvDataSet1 = new QLSV.QLDSVDataSet();
-            this.barBtnExit = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qldsvDataSet1)).BeginInit();
@@ -212,7 +212,7 @@
             // 
             // barButtonPrintStudent
             // 
-            this.barButtonPrintStudent.Caption = "List of Students";
+            this.barButtonPrintStudent.Caption = "Danh Sách Sinh Viên";
             this.barButtonPrintStudent.Id = 8;
             this.barButtonPrintStudent.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonPrintStudent.ImageOptions.Image")));
             this.barButtonPrintStudent.ItemAppearance.Disabled.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -271,6 +271,26 @@
             this.btnExit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.LargeImage")));
             this.btnExit.Name = "btnExit";
             // 
+            // barBtnExit
+            // 
+            this.barBtnExit.Caption = "Đăng Xuất";
+            this.barBtnExit.Id = 13;
+            this.barBtnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnExit.ImageOptions.Image")));
+            this.barBtnExit.ItemAppearance.Disabled.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnExit.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barBtnExit.ItemAppearance.Hovered.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnExit.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barBtnExit.ItemAppearance.Normal.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnExit.ItemAppearance.Normal.Options.UseFont = true;
+            this.barBtnExit.ItemAppearance.Pressed.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnExit.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barBtnExit.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barBtnExit.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barBtnExit.LargeWidth = 150;
+            this.barBtnExit.Name = "barBtnExit";
+            this.barBtnExit.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -283,7 +303,7 @@
             this.ribbonPageGroup5,
             this.btnThoat});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Management";
+            this.ribbonPage1.Text = "Quản Lý";
             // 
             // ribbonPageGroupStudent
             // 
@@ -327,7 +347,7 @@
             this.ribbonPageGroup6,
             this.ribbonPageGroup7});
             this.ribbonPageReport.Name = "ribbonPageReport";
-            this.ribbonPageReport.Text = "Report";
+            this.ribbonPageReport.Text = "Báo Cáo";
             // 
             // ribbonPageGroup4
             // 
@@ -352,26 +372,6 @@
             // 
             this.qldsvDataSet1.DataSetName = "QLDSVDataSet";
             this.qldsvDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // barBtnExit
-            // 
-            this.barBtnExit.Caption = "Đăng Xuất";
-            this.barBtnExit.Id = 13;
-            this.barBtnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnExit.ImageOptions.Image")));
-            this.barBtnExit.ItemAppearance.Disabled.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barBtnExit.ItemAppearance.Disabled.Options.UseFont = true;
-            this.barBtnExit.ItemAppearance.Hovered.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barBtnExit.ItemAppearance.Hovered.Options.UseFont = true;
-            this.barBtnExit.ItemAppearance.Normal.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barBtnExit.ItemAppearance.Normal.Options.UseFont = true;
-            this.barBtnExit.ItemAppearance.Pressed.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barBtnExit.ItemAppearance.Pressed.Options.UseFont = true;
-            this.barBtnExit.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barBtnExit.ItemInMenuAppearance.Normal.Options.UseFont = true;
-            this.barBtnExit.LargeWidth = 150;
-            this.barBtnExit.Name = "barBtnExit";
-            this.barBtnExit.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // Home
             // 

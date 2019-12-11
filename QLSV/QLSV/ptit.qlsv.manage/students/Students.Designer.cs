@@ -304,6 +304,7 @@
             this.barBtnAddNewStudent.ItemInMenuAppearance.Pressed.Options.UseFont = true;
             this.barBtnAddNewStudent.Name = "barBtnAddNewStudent";
             this.barBtnAddNewStudent.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barBtnAddNewStudent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnAddNewStudent_ItemClick);
             // 
             // barBtnEditStudent
             // 
@@ -328,6 +329,7 @@
             this.barBtnEditStudent.ItemInMenuAppearance.Pressed.Options.UseFont = true;
             this.barBtnEditStudent.Name = "barBtnEditStudent";
             this.barBtnEditStudent.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barBtnEditStudent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnEditStudent_ItemClick);
             // 
             // barBtnDeleteStudent
             // 
@@ -352,6 +354,7 @@
             this.barBtnDeleteStudent.ItemInMenuAppearance.Pressed.Options.UseFont = true;
             this.barBtnDeleteStudent.Name = "barBtnDeleteStudent";
             this.barBtnDeleteStudent.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barBtnDeleteStudent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDeleteStudent_ItemClick);
             // 
             // barBtnSaveStudent
             // 
@@ -376,6 +379,7 @@
             this.barBtnSaveStudent.ItemInMenuAppearance.Pressed.Options.UseFont = true;
             this.barBtnSaveStudent.Name = "barBtnSaveStudent";
             this.barBtnSaveStudent.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barBtnSaveStudent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnSaveStudent_ItemClick);
             // 
             // barBtnUndo
             // 
@@ -430,6 +434,7 @@
             this.barBtnRefresh.ItemInMenuAppearance.Pressed.Options.UseFont = true;
             this.barBtnRefresh.Name = "barBtnRefresh";
             this.barBtnRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barBtnRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnRefresh_ItemClick);
             // 
             // barBtnTransferClass
             // 
@@ -479,6 +484,7 @@
             this.barBtnExit.ItemInMenuAppearance.Pressed.Options.UseFont = true;
             this.barBtnExit.Name = "barBtnExit";
             this.barBtnExit.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barBtnExit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnExit_ItemClick);
             // 
             // bar3
             // 

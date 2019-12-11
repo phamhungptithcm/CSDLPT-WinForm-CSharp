@@ -13,3 +13,4 @@ Hùng
 4. Đóng học phí
 5. In danh sách sinh viên
 6. In bảng điểm môn học
+7. Tạo Form đăng kí tài khoản

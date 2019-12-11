@@ -54,44 +54,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ptit.qlsv.ui\classes\Class.cs">
+    <Compile Include="ptit.qlsv.manage\classes\Class.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\classes\Class.Designer.cs">
+    <Compile Include="ptit.qlsv.manage\classes\Class.Designer.cs">
       <DependentUpon>Class.cs</DependentUpon>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\account\Login.cs">
+    <Compile Include="ptit.qlsv.manage\account\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\account\Login.Designer.cs">
+    <Compile Include="ptit.qlsv.manage\account\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ptit.qlsv.ui\home\Home.cs">
+    <Compile Include="ptit.qlsv.manage\home\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\home\Home.Designer.cs">
+    <Compile Include="ptit.qlsv.manage\home\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\students\Students.cs">
+    <Compile Include="ptit.qlsv.manage\students\Students.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\students\Students.Designer.cs">
+    <Compile Include="ptit.qlsv.manage\students\Students.Designer.cs">
       <DependentUpon>Students.cs</DependentUpon>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\subjects\Subject.cs">
+    <Compile Include="ptit.qlsv.manage\subjects\Subject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ptit.qlsv.ui\subjects\Subject.Designer.cs">
+    <Compile Include="ptit.qlsv.manage\subjects\Subject.Designer.cs">
       <DependentUpon>Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ptit.qlsv.service\students\StudentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ptit.qlsv.service\students\StudentReport.Designer.cs">
+      <DependentUpon>StudentReport.cs</DependentUpon>
     </Compile>
     <Compile Include="QLDSVDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDSVDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ptit.qlsv.ui\classes\Class.resx">
+    <EmbeddedResource Include="ptit.qlsv.manage\classes\Class.resx">
       <DependentUpon>Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -105,17 +111,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ptit.qlsv.ui\account\Login.resx">
+    <EmbeddedResource Include="ptit.qlsv.manage\account\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ptit.qlsv.ui\home\Home.resx">
+    <EmbeddedResource Include="ptit.qlsv.manage\home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ptit.qlsv.ui\students\Students.resx">
+    <EmbeddedResource Include="ptit.qlsv.manage\students\Students.resx">
       <DependentUpon>Students.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ptit.qlsv.ui\subjects\Subject.resx">
+    <EmbeddedResource Include="ptit.qlsv.manage\subjects\Subject.resx">
       <DependentUpon>Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ptit.qlsv.service\students\StudentReport.resx">
+      <DependentUpon>StudentReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +151,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ptit.qlsv.report\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
